@@ -1,0 +1,39 @@
+@import '../../vars.css';
+
+.header-nav {
+  background-color: var(--alt-bg-color);
+}
+
+
+.header-nav__ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  height: 40px;
+}
+
+.header-nav__ul__li {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav__ul__li__header {
+  font-size: 1.2em;
+  margin: 0;
+  color: #fff;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.header-nav__ul__li__login-link {
+  font-size: 1.2em;
+  color: #000;
+  text-decoration: none;
+  background-color: var(--main-bg-color);
+  margin-left: 6px;
+  border-radius: 5px;
+  padding: 5px;
+}

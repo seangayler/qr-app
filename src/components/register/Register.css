@@ -1,0 +1,45 @@
+@import '../../vars.css';
+
+.register-form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.register-form {
+  width: 500px;
+  margin-top: 75px;
+  background-color: var(--darkalt-bg-color);
+  border-radius: 10px;
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form__header {
+  font-size: 1.2em;
+  color: #fff;
+  align-self: center;
+}
+
+.register-form__label {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.register-form__input {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.register-form__submit {
+  align-self: center;
+  background-color: var(--lightalt-bg-color);
+  border-radius: 5px;
+  border-width: 0;
+  font-size: 1.2em;
+  margin-top: 30px;
+  padding: 10px 15px 10px 15px;
+}
+

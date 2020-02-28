@@ -1,0 +1,45 @@
+@import '../../vars.css';
+
+.login-form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  width: 500px;
+  margin-top: 75px;
+  background-color: var(--alt-bg-color);
+  border-radius: 10px;
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form__header {
+  font-size: 1.2em;
+  color: #fff;
+  align-self: center;
+}
+
+.login-form__label {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.login-form__input {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.login-form__submit {
+  align-self: center;
+  background-color: var(--main-bg-color);
+  border-radius: 5px;
+  border-width: 0;
+  font-size: 1.2em;
+  margin-top: 30px;
+  padding: 10px 15px 10px 15px;
+}
+
