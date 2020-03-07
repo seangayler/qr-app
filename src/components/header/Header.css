@@ -1,39 +1,37 @@
-@import '../../vars.css';
-
-.header-nav {
-  background-color: var(--alt-bg-color);
-}
-
-
-.header-nav__ul {
+.navbar-list {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   list-style: none;
-  padding: 5px;
-  margin: 0;
-  height: 40px;
+  padding: 40px;
 }
 
-.header-nav__ul__li {
+.navbar-list__brand {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.header-nav__ul__li__header {
-  font-size: 1.2em;
+.navbar-list__brand__heading {
   margin: 0;
-  color: #fff;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-right: 20px;
 }
 
-.header-nav__ul__li__login-link {
-  font-size: 1.2em;
-  color: #000;
-  text-decoration: none;
-  background-color: var(--main-bg-color);
-  margin-left: 6px;
-  border-radius: 5px;
-  padding: 5px;
+.navbar-list__brand__slogan  {
+  margin: 0;
+}
+
+.navbar-list__links {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+}
+
+.navbar-list__links--login {
+  justify-content: space-between;
+}
+
+.navbar-list__links--logout {
+  justify-content: space-around;
 }

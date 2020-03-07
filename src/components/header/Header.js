@@ -6,31 +6,29 @@ import {
 } from "react-router-dom";
 
 class Header extends Component {
-  constructor(props) {
-    super(props);
-  }
   
   render() {
     /* Display Login and Register buttons if user is not authenticated. 
        Display Logout button if user is authenticated. */
     let loginLinks;
     (!this.props.loggedIn) ? loginLinks = (
-      <li className="ul__li">
-        <Link to="/login" className="header-nav__ul__li__login-link">Login</Link>
-        <Link to="/register" className="header-nav__ul__li__login-link">Register</Link>
+      <li className="navbar-list__links navbar-list__links--login">
+        <Link to="/login">Login &#8617;	</Link>
+        <Link to="/register">Register &#8617;	</Link>
       </li>
     ) : loginLinks = (
-      <li className="ul__li">
-        <button>Logout</button>
+      <li className="navbar-list__links navbar-list__links--logout">
+        <Link to="/">Logout &#8618; </Link>
       </li>
     );
 
     return (
       <header>
-        <nav className="header-nav">
-          <ul className="header-nav__ul">
-            <li className="header-nav__ul__li">
-              <Link to="/"><h1 className="header-nav__ul__li__header">QR App</h1></Link>
+        <nav>
+          <ul className="navbar-list">
+            <li className="navbar-list__brand">
+              <Link to="/"><h1 className="navbar-list__brand__heading">QR App</h1></Link>
+              <p className="navbar-list__brand__slogan">Scan. Track.</p>
             </li>
             {loginLinks}
           </ul>

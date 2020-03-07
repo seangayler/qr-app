@@ -1,11 +1,20 @@
-@import '../../vars.css';
+
 
 body {
   margin: 0;
-  background-color: var(--main-bg-color);
   min-height: 100vh;
   min-width: 100vw;
 }
 
 .App {
+  width: 95%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
 }

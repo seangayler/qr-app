@@ -1,23 +1,28 @@
 import React, { Component } from 'react';
-import './Register.css';
+import '../login/Login.css';
 
 class Register extends Component {
-  constructor() {
-    super();
+  handleSubmit = (e) => {
+    e.preventDefault();
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', '/register');
+    xhr.send();
   }
-
+  
   render() {
     return (
-      <div className="register-form-container">
-        <form className="register-form">
-          <h2 className="register-form__header">Register Here</h2>
-          <label className="register-form__label" htmlFor="username">Username:</label>
-          <input className="register-form__input" type="text" id="username" required></input>
-          <label className="register-form__label" htmlFor="password">Password:</label>
-          <input className="register-form__input" type="password" id="password" required></input>
-          <button className="register-form__submit" type="submit">Click to Register</button>
+      <div className="login-container">
+        <form className="login" onSubmit={this.handleSubmit}>
+          <h2 className="login__heading">We'd love to have you.</h2>
+          <label htmlFor="username">Username (login with this):</label>
+          <input className="login__input" type="text" id="username" placeholder="5 to 20 characters" minlength="5" maxlength="20" required></input>
+          <label htmlFor="email">Email:</label>
+          <input className="login__input" type="email" id="email" required></input>
+          <label htmlFor="username">Password:</label>
+          <input className="login__input" type="text" id="password" placeholder="8 to 20 characters" minlength="8" maxlength="20" required></input>
+          <button className="login__submit" type="submit">Register</button>
         </form>
-      </div>
+    </div>
     )
   }
 }

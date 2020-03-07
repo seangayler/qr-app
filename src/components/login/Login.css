@@ -1,45 +1,29 @@
-@import '../../vars.css';
-
-.login-form-container {
-  width: 100%;
+.login-container {
+  margin-top: 100px;
   display: flex;
   justify-content: center;
 }
 
-.login-form {
-  width: 500px;
-  margin-top: 75px;
-  background-color: var(--alt-bg-color);
-  border-radius: 10px;
-  height: 300px;
-  padding: 10px;
+.login {
   display: flex;
   flex-direction: column;
+  width: 400px;
 }
 
-.login-form__header {
-  font-size: 1.2em;
-  color: #fff;
+.login__heading {
   align-self: center;
 }
 
-.login-form__label {
+.login__input {
+  margin: 10px 0 10px 0;
+  border: 1px solid #000;
+}
+
+.login__submit {
+  margin-top: 20px;
+  border: 1px solid #000;
+  height: 30px;
+  background-color: #000;
   color: #fff;
-  margin-bottom: 10px;
+  font-size: 1rem;
 }
-
-.login-form__input {
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
-
-.login-form__submit {
-  align-self: center;
-  background-color: var(--main-bg-color);
-  border-radius: 5px;
-  border-width: 0;
-  font-size: 1.2em;
-  margin-top: 30px;
-  padding: 10px 15px 10px 15px;
-}
-
