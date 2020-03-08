@@ -35,3 +35,13 @@
 .navbar-list__links--logout {
   justify-content: space-around;
 }
+
+@media (max-width: 400px) {
+  .navbar-list__brand__slogan {
+    display: none;
+  }
+  .navbar-list {
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+}

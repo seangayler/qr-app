@@ -57,3 +57,59 @@
 .home-register {
   text-decoration: underline;
 }
+
+@media (max-width: 1336px) {
+  .home-message {
+    padding-left: 0px;
+    justify-content: center;
+    text-align: center;
+  }
+  .home-qr-section {
+    padding-right: 0;
+    padding-top: 50px;
+  }
+  .home-qr-section__img {
+    width: 300px;
+    height: 300px;
+    padding-right: 20px;
+  }
+  .home-analytics-section {
+    padding-left: 0;
+    padding-top: 50px;
+    padding-left: 75px;
+  }
+  .home-analytics-section__img {
+    width: 300px;
+    margin-left: 0;
+    margin-left: 20px;
+  }
+  .home-footer {
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+    text-align: center;
+    margin-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-message {
+    margin-left: 20px;
+  }
+  
+  .home-qr-section, .home-analytics-section {
+    align-items: center;
+    text-align: center;
+    padding-top: 0;
+  }
+  .home-qr-section {
+    flex-direction: column;
+  }
+  .home-analytics-section {
+    padding-right: 0;
+    padding-left: 20px;
+    flex-direction: column-reverse;
+  }
+}

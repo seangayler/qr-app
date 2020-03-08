@@ -8,6 +8,7 @@ body {
 
 .App {
   width: 95%;
+  max-width: 1920px;
 }
 
 a {
@@ -17,4 +18,11 @@ a {
 
 a:visited {
   color: #000;
+}
+
+@media (min-width: 1920px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
 }

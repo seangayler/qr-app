@@ -10,7 +10,7 @@ class Login extends Component {
           <label htmlFor="username">Username:</label>
           <input className="login__input" type="text" id="username"></input>
           <label htmlFor="username">Password:</label>
-          <input className="login__input" type="text" id="password" required></input>
+          <input className="login__input" type="password" id="password" required></input>
           <button className="login__submit" type="submit">Login</button>
         </form>
       </div>
